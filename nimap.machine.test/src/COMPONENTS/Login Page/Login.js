@@ -1,7 +1,7 @@
 import React,{Component} from "react";
 import SimpleReactValidator from "simple-react-validator";
 import {history} from "../../COMPONENTS/History/history"
-import "../../App.css"
+import "../../App.css";
 class Login extends Component{
     constructor(){
         super()
@@ -31,6 +31,7 @@ class Login extends Component{
         let password=localStorage.getItem("userPassword");
         if(userName === this.state.userName && password === this.state.userPassword){
             history.push("/Menu")
+            window.location.reload();
         }
         else{
             alert("Please Login First...!")
@@ -52,7 +53,7 @@ class Login extends Component{
 
                                 <div className="form-group">
                                     <label>Password</label><br/>
-                                    <input type="password" className="form-control" placeholder="Password"
+                                    <input type="password" className="form-control" placeholder="Enter Your Password"
                                     name="userPassword" value={this.state.userPassword} onChange={this.handleInput}/>
                                     {this.validator.message("Password",this.state.userPassword,"required|min:5|max:20")}
                                     </div>

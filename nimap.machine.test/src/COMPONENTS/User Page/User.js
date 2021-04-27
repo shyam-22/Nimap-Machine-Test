@@ -1,4 +1,6 @@
 import React,{Component} from "react";
+import {history} from "../../COMPONENTS/History/history"
+
 class User extends Component{
     constructor(){
         super();
@@ -19,7 +21,6 @@ class User extends Component{
     }
 
     logout = () => {
-        let history=this.props.history
         localStorage.setItem("userName","")
         localStorage.setItem("userPassword","")
         history.push("/login")
