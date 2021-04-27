@@ -1,7 +1,7 @@
 import React,{Component} from "react";
 import SimpleReactValidator from "simple-react-validator";
 import {history} from "../../COMPONENTS/History/history"
-
+import "../../App.css"
 class Login extends Component{
     constructor(){
         super()
@@ -31,7 +31,6 @@ class Login extends Component{
         let password=localStorage.getItem("userPassword");
         if(userName === this.state.userName && password === this.state.userPassword){
             history.push("/Menu")
-            window.location.reload()
         }
         else{
             alert("Please Login First...!")
