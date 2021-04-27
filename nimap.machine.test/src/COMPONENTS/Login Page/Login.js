@@ -45,14 +45,14 @@ class Login extends Component{
                         <form onSubmit={this.handleFormSubmit}>
                              <h2>Please Login First...!</h2>
                                 <div className="form-group">
-                                    <label>UserName</label><br/>
+                                    <label><b>Username</b></label><br/>
                                     <input type="text" className="form-control" placeholder="Enter Your Username"
                                     name="userName"  value={this.state.userName} onChange={this.handleInput}/>
                                     {this.validator.message("username",this.state.userName,"required|min:5|max:20")}
                                 </div>
 
                                 <div className="form-group">
-                                    <label>Password</label><br/>
+                                    <label><b>Password</b></label><br/>
                                     <input type="password" className="form-control" placeholder="Enter Your Password"
                                     name="userPassword" value={this.state.userPassword} onChange={this.handleInput}/>
                                     {this.validator.message("Password",this.state.userPassword,"required|min:5|max:20")}

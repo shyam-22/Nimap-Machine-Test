@@ -12,9 +12,8 @@ export class Home extends Component {
 }
 
 export default Home
-
-//Home page ---->Navbar component,Dropdown component,Information
-//                /   \
-//               /     \
-//              /       \
-//         Dropdown   Information
+//Home page have 3 components ---->Navbar component,Dropdown component,Information
+//                                      /   \
+//                                     /     \
+//                                    /       \
+//                              Dropdown   Information
