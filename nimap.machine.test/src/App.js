@@ -23,5 +23,8 @@ class App extends Component {
 
 export default App;
 
-
-
+//Home page ---->Navbar component,Dropdown component,Information
+//                /   \
+//               /     \
+//              /       \
+//         Dropdown   Information

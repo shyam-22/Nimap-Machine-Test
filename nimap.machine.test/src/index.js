@@ -21,6 +21,12 @@ else{
         </BrowserRouter>,document.getElementById('root'));
 }
 
+//Home page ---->Navbar component,Dropdown component,Information
+//                /   \
+//               /     \
+//              /       \
+//         Dropdown   Information
+
 
 
 
